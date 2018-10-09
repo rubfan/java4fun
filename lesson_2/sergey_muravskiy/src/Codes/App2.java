@@ -23,3 +23,4 @@ class App2
 }  
 
 //2) Найти среди 3х чисел максимальное и минимальное
+//A teacher asked a student to write 55. 
