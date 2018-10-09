@@ -16,7 +16,7 @@ class App7
 		  System.out.println("Full rent is" + ' ' + Full_rent + ' ' + "UAH");
 	    }
 		
-		else (Day_count > 7)
+		else if(Day_count > 7)
 		{ 
 	      Full_rent = Rent_without_discount - 50; 
 		  System.out.println("Full rent is" + ' '  + Full_rent + ' ' + "UAH");

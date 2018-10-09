@@ -16,3 +16,4 @@ class App1
 }  
 
 //1) Найти минимальное из 3х чисел
+//First Joke from internet
