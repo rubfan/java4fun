@@ -7,8 +7,6 @@ Tasc 1.
 */
 
 class MinimumOfThree {
-    MinimumOfThree() {
-    }
 
     public static void main(String[] params) {
 
