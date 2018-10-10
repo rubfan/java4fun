@@ -34,3 +34,4 @@ public class Test2 {
         System.out.println("min = " + min);
         System.out.println("max = " + max);
     }
+}
