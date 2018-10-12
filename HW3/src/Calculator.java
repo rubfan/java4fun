@@ -35,7 +35,6 @@ public class Calculator {
         if (operation == " remainder of the division "){
             equally = firstOperand % secondOperand;
             System.out.printf(firstOperand + " / " + secondOperand + " the remainder " + equally );
-
         }
     }
 
