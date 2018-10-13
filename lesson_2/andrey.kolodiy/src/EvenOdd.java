@@ -6,7 +6,7 @@ Write a program that checks if the number is even or odd.
 
 */
 
-class EvenOdd{
+public class EvenOdd{
 
     public static void main(String[] params){
 
