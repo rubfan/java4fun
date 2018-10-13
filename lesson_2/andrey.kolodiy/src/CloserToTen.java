@@ -7,7 +7,7 @@ Find the nearest to 10 of 2 given numbers. For example, among the numbers 8 and 
 
 */
 
-class CloserToTen{
+public class CloserToTen{
     public static void main(String[] params){
 
         int num1 = Integer.parseInt(params[0]);
