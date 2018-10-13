@@ -6,7 +6,7 @@ Tasc 3.
 
 */
 
-class MinOfThreeIdent {
+public class MinOfThreeIdent {
 
     public static void main(String[] params) {
 
