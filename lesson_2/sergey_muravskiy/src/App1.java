@@ -11,7 +11,7 @@ class App1
 			if (Params_value < Min) {Min = Params_value;}
 		}
 		
-        System.out.println("Min" +' '+ ">" + ' ' + Min);
+        System.out.println("Min" + " " + ">" + " " + Min);
     }
 }  
 

@@ -18,7 +18,7 @@ class App2
 			if (Params_value > Max) {Max = Params_value;}
 		}
 		
-        System.out.println("Min" + ' ' + ">" + ' ' + Min + "\r\n" + "Max" + ' ' + ">" + ' ' + Max);
+        System.out.println("Min" + " " + ">" + " " + Min + "\r\n" + "Max" + " " + ">" + " " + Max);
     }
 }  
 

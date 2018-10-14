@@ -13,13 +13,13 @@ class App7
 		if(Day_count > 5 && Day_count <= 7)
 		{ 
 	      Full_rent = Rent_without_discount - 20;
-		  System.out.println("Full rent is" + ' ' + Full_rent + ' ' + "UAH");
+		  System.out.println("Full rent is" + " " + Full_rent + " " + "UAH");
 	    }
 		
 		else if(Day_count > 7)
 		{ 
 	      Full_rent = Rent_without_discount - 50; 
-		  System.out.println("Full rent is" + ' '  + Full_rent + ' ' + "UAH");
+		  System.out.println("Full rent is" + " "  + Full_rent + " " + "UAH");
 	    }
 		
     }

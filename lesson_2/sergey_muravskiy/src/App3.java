@@ -4,6 +4,7 @@ class App3
 	{
 		int Count_param = params.length;
 		float Min = Float.parseFloat(params[0]);
+		int Out_check=0;
 		
 		for(int i=1;i<Count_param;i++)
 		{
@@ -16,7 +17,12 @@ class App3
 		{
 			float Check = 0;
 			Check = Float.parseFloat(params[i]);
-			if(Check == Min) {System.out.println("Min" +' '+ ">" + ' ' + Min);}
+			Out_check++;
+			if(Check == Min) 
+			{
+				if (Out_check == 1) {System.out.print("Min" + " " + ">" + " " + Min + " ");}
+				else {System.out.print(Min + " ");}
+			}
 			
 		}
     }
