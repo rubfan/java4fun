@@ -13,18 +13,24 @@ public class CalculatorLight {
 				result = firstNumber * secondNumber;
 				break;
 			case "division":
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
-				result = firstNumber / secondNumber;
-				break; }
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
+					result = firstNumber / secondNumber;
+					break; 
+				}
 			case "sub":
 				result = firstNumber - secondNumber;
 				break;
 			case "remainder":
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
-				result = firstNumber % secondNumber;
-				break; }
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
+					result = firstNumber % secondNumber;
+					break; 
+				}
 			case "modul":
 				result = Math.abs(firstNumber);
 				break;

@@ -13,8 +13,8 @@ public class CalculatorProfessional {
 		System.out.println("Enter number: ");
 		int firstNumber = scan.nextInt();
 		if (operation != 6) {
-		System.out.println("Enter second number: ");
-		secondNumber = scan.nextInt();
+			System.out.println("Enter second number: ");
+			secondNumber = scan.nextInt();
 		}
 		
 		switch(operation) {
@@ -25,18 +25,24 @@ public class CalculatorProfessional {
 				result = firstNumber * secondNumber;
 				break;
 			case 3:
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
-				result = firstNumber / secondNumber;
-				break; }
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
+					result = firstNumber / secondNumber;
+					break; 
+				}
 			case 4:
 				result = firstNumber - secondNumber;
 				break;
 			case 5:
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
-				result = firstNumber % secondNumber;
-				break; }
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
+					result = firstNumber % secondNumber;
+					break; 
+				}
 			case 6:
 				result = Math.abs(firstNumber);
 				break;

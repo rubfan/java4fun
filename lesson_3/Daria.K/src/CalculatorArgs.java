@@ -11,7 +11,8 @@ public class CalculatorArgs {
 		int secondNumber = Integer.parseInt(args[2]);
 		
 		switch(operation) {
-			case "adittion":
+			case "addittion":
+			case "add":
 			case "+":
 				result = firstNumber + secondNumber;
 				break;
@@ -22,10 +23,13 @@ public class CalculatorArgs {
 			case "division":
 			case "div":
 			case "/":
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
-				result = firstNumber / secondNumber;
-				break; }
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
+					result = firstNumber / secondNumber;
+					break; 
+				}
 			case "subtract":
 			case "sub":
 			case "-":
@@ -34,10 +38,13 @@ public class CalculatorArgs {
 			case "remainder":
 			case "rem":
 			case "%":
-				if (secondNumber == 0) { System.out.println("Error"); break; }
-				else {
+				if (secondNumber == 0) { 
+					System.out.println("Error"); 
+					break; 
+				} else {
 				result = firstNumber % secondNumber;
-				break; }
+				break; 
+				}
 			case "module":
 			case "mod":
 				result = Math.abs(firstNumber);
