@@ -41,7 +41,7 @@ class CalculatorWithParams
                     break;
             }
 		//Вывод результата
-        System.out.print("Result > " + Result );
+        System.out.print("Result > " + Result);
     }
 }  
  
