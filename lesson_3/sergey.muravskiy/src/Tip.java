@@ -13,8 +13,8 @@ public class Tip {
         System.out.print("Enter service quality [Terrible/Poor/Good/Great/Excelant] > ");
         QualityOfService = in.next();
         TotalBill = Bill;
-		//Качество обслуживания
-		switch(QualityOfService)
+	//Качество обслуживания
+	switch(QualityOfService)
             {
                 case "Terrible" :
                     Tip = (Bill * 0)/100;
@@ -25,10 +25,10 @@ public class Tip {
                 case "Good" :
                     Tip = (Bill *10)/100;
                     break;
-				case "Great" :
+		case "Great" :
                     Tip = (Bill * 15)/100;
                     break;
-				case "Excelant" :
+		case "Excelant" :
                     Tip = (Bill * 20)/100; 
                     break;
                 default :
@@ -36,9 +36,9 @@ public class Tip {
                     break;
             }
         //Вывод чаевых и счета с чаевыми
-		TotalBill +=Tip;
+	TotalBill +=Tip;
         System.out.println("Tip > " + Tip + " UAH");
-		System.out.print("Bill with Tip > " + TotalBill  + " UAH");
+	System.out.print("Bill with Tip > " + TotalBill  + " UAH");
 
     }
 }
