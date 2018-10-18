@@ -2,7 +2,7 @@ public class Remainder {
 	public static void main(String[] args) {
 		int first = Integer.parseInt(args[0]);
 		int second = Integer.parseInt(args[1]);
-		if((second > first && (second % first) == 0) || (first > second && (first % second) == 0)) { 
+		if(first > second && (first % second) == 0) { 
 			System.out.println("Divided without remainder");
 		}
 		else {
