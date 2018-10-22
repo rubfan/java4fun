@@ -1,17 +1,13 @@
-
 public class SimpleCalc {
     public static void main(String[] args) {
-            if(args.length < 2) {
-                System.out.println("Not enough arguments");
-                return;
-            }
-
-            System.out.println("Result is: " +
-                    calculate(  args[0],
-                                Integer.parseInt(args[1]),
-                                args[2]==null ? 0 : Integer.parseInt(args[2])));
-        }
-
+        System.out.println("5 + 12 = "  +calculate("+", 5, 12));
+        System.out.println("5 - 12 = "  +calculate("-", 5, 12));
+        System.out.println("5 * 12 = "  +calculate("*", 5, 12));
+        System.out.println("12 / 5 = "  +calculate("/", 12, 5));
+        System.out.println("12 \\ 5 = " +calculate("\\", 12, 5));
+        System.out.println("12 % 5 = "  +calculate("%", 12, 5));
+        System.out.println("abs -15 = " +calculate("abs", -15, 0));
+    }
 
     private static int calculate(String operation, int arg1, int arg2){
         int result = 0;
@@ -22,7 +18,7 @@ public class SimpleCalc {
             case "-":
                 result = arg1 - arg2;
                 break;
-            case "mul":
+            case "*":
                 result = arg1 * arg2;
                 break;
             case "/":
