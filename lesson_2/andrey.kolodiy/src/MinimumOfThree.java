@@ -6,7 +6,7 @@ Tasc 1.
 
 */
 
-class MinimumOfThree {
+public class MinimumOfThree {
 
     public static void main(String[] params) {
 

@@ -6,7 +6,7 @@ Tasc 2.
 
 */
 
-class MinAndMaxOfThre{
+public class MinAndMaxOfThre{
 
     public static void main(String[] params) {
 

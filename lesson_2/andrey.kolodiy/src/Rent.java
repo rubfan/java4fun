@@ -7,7 +7,7 @@ Task_7
 
 */
 
-class Rent{
+public class Rent{
     public static void main(String[] params){
 
         int arenda = 40;

@@ -6,7 +6,7 @@ Given the 2 numbers, determine whether the first number is divisible by the seco
 
 */
 
-class NoResidue{
+public class NoResidue{
 
     public static void main(String[] params){
 
