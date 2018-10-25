@@ -11,36 +11,27 @@ public class L5_Task2 {
         int dY = 0;   // shift of cols
 
         do {
-            while (y < (n - 1 - dY)) {
+            while (y < (n - 1 - dY)) { // going right
                 y++;
                 a[x][y] = ++num;
                 k--;
-                System.out.println("a[" + x + y + "]=" + a[x][y]);
-
             }
-            System.out.println("------------");
-            while (x < (n - 1 - dX)) {
+            while (x < (n - 1 - dX)) { // going down
                 x++;
                 a[x][y] = ++num;
                 k--;
-                System.out.println("a[" + x + y + "]=" + a[x][y]);
             }
-            System.out.println("------------");
-            while (y > (0 + dY)) {
+            while (y > (0 + dY)) { // going left
                 y--;
                 a[x][y] = ++num;
                 k--;
-                System.out.println("a[" + x + y + "]=" + a[x][y]);
             }
-            System.out.println("------------");
             dX++;
-            while (x > (0 + dX)) {
+            while (x > (0 + dX)) { // going up
                 x--;
                 a[x][y] = ++num;
                 k--;
-                System.out.println("a[" + x + y + "]=" + a[x][y]);
             }
-            System.out.println("------------");
             dY++;
         } while (k != 0);
 
