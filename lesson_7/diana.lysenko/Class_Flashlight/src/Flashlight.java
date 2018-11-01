@@ -5,6 +5,7 @@ public class Flashlight {
     private boolean whiteLight;
     private boolean redLight;
     private boolean blink;
+
     // shine white with 1 battery
     // shine red with 2 batteries
     // blink with 3 batteries
