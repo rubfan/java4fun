@@ -1,15 +1,20 @@
-public class HW4Lucky /*Task 8*/ {
+public class HW4Lucky {
     public static void main(String[] args) {
+        int k[] = new int[6];
         int count = 0;
-        for (int n1 = 1; n1 < 10; n1++)
-            for (int n2 = 0; n2 < 10; n2++)
-                for (int n3 = 0; n3 < 10; n3++)
-                    for (int n4 = 0; n4 < 10; n4++)
-                        for (int n5 = 0; n5 < 10; n5++)
-                            for (int n6 = 0; n6 < 10; n6++)
-                                if ((n1 + n2 + n3) == (n4 + n5 + n6)) {
-                                    count++;
-                                }
-                                System.out.println("Task 8. Here are how many happy tickets from 100,000 to 999,999: " + count);
+        for (int i = 100; i < 1000; i++) {
+            for (int j = 0; j < 1000; j++) {
+                k[0] = i % 10;
+                k[1] = i % 100 / 10;
+                k[2] = i % 1000 / 100;
+                k[3] = j % 10;
+                k[4] = j % 100 / 10;
+                k[5] = j % 1000 / 100;
+                if ((k[0] + k[1] + k[2]) == (k[3] + k[4] + k[5])) {
+                    count++;
+                }
+            }
+        }
+        System.out.println("Task 8. Here are how many happy tickets from 100,000 to 999,999: " + count);
     }
 }
