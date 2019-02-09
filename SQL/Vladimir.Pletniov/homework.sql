@@ -5,7 +5,7 @@ create table Address
   city       VARCHAR(256) not null,
   post_index int          null,
   price      int          null,
-    primary key (ID)
+  primary key (ID)
 );
 
 create table People
@@ -15,7 +15,7 @@ create table People
   name      VARCHAR(256) not null,
   last_name VARCHAR(256) not null,
   salary    int          not null,
-    primary key (ID)
+  primary key (ID)
 );
 
 INSERT INTO `homework`.`Address`
@@ -77,8 +77,45 @@ INSERT INTO `homework`.`People` (`ID`, `age`, `name`, `last_name`, `salary`)
 VALUES (45, 54, 'Nastia', 'Mira', 34321);
 
 
-SELECT name,last_name,Address.post_index from People left join  Address on People.ID = Address.Id;
-SELECT * from Address left join People on Address.id=People.ID;
+SELECT name, last_name, Address.post_index
+from People
+       left join Address on People.ID = Address.Id;
+SELECT *
+from Address
+       left join People on Address.id = People.ID;
 
-select * from People inner join Address on People.ID=Address.ID;
-select * from Address inner join People on Address.ID=People.ID;
+select *
+from People
+       inner join Address on People.ID = Address.ID;
+select *
+from Address
+       inner join People on Address.ID = People.ID;
+
+select *
+from Address
+       left join People on Address.ID = People.ID
+where People.ID is NULL;
+
+select count(*)
+from Address
+       left join People on Address.ID = People.ID
+where People.ID is NULL;
+
+SELECT count(*)
+from People
+       left join Address on People.ID = Address.ID
+where Address.ID is null;
+
+select *
+from People
+       inner join Address on People.ID = Address.ID
+where city = 'Kiev';
+
+
+select *
+from Address
+       left join People on Address.ID = People.ID
+where People.ID is NULL
+having price > 250000
+   and price < 1000000;
+
