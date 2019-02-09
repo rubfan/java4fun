@@ -119,3 +119,30 @@ where People.ID is NULL
 having price > 250000
    and price < 1000000;
 
+SELECT *
+from People
+       inner join Address on People.ID = Address.ID
+where salary * 10 >= price;
+
+select *
+from Address
+       inner join People on Address.ID = People.ID
+where 10 * salary >= price
+having People.ID = 5;
+
+INSERT into People (age, name, last_name, salary)
+VALUES (32, 'Vasia', 'Petichkin', 1313134);
+
+create table PeopleAddress
+(
+  ID int auto_increment,
+  constraint PeopleAddress_pk
+    primary key (ID),
+  constraint PeopleAddress__ID_fk
+    foreign key (ID) references People (ID),
+  constraint PeopleAddress__ID_fk_2
+    foreign key (ID) references Address (ID)
+);
+
+
+
